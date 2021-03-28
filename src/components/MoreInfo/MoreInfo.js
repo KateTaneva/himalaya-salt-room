@@ -1,26 +1,44 @@
-import { useEffect, useState } from 'react';
+
+import { Component } from "react";
 
 import * as moreInfoService from '../services/moreInfoService';
 
-const MoreInfo = ({
-    match
-}) => {
+class MoreInfo extends Component {
+    constructor(props) {
+        super(props);
 
-    let [info, setInfo] = useState({});
-    useEffect(() => {
-        moreInfoService.getOne(match.params.infoId)
-            .then(res => setInfo(res))
-    })
+        this.state = {
+            title: '',
+            currentCategory: 'effect',
+            description: '',
+        };
+    }
 
-    return (
-        <section className="moreInfoExtension">
-            < h1 className="moreInfoExtensionTitle"> Влияние на солта върху организма</h1>
-            <article className="moreInfoExtensionArticle">
+    componentDidMount() {
+        moreInfoService.getAll()
+            .then((res) => this.setState({ title: res, description: res }))
+    }
+
+    componentDidUpdate(prevProps) {
+        const category = this.props.match.params.category;
+        if (prevProps.match.params.category == category) {
+            this.return;
+        }
+        moreInfoService.getAll(category)
+            .then((res) => {
+                this.setState({ title: res, description: res })
+            })
+    }
+    render() {
+        <section >
+            < h1 > Влияние на солта върху организма</h1>
+            <article >
                 <h3>{info.name}</h3>
-                <p className="description">{info.description}</p>
+                <p >{info.description}</p>
             </article>
         </section>
-    );
+    }
+
 }
 
 export default MoreInfo;

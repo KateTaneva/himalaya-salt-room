@@ -1,5 +1,6 @@
 import './Header.css';
 import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -11,7 +12,7 @@ const Header = () => {
                 <Link to="/" >Начало</Link>
             </li>
             <li>
-                <Link to='/AboutUs'>За нас</Link>
+                <NavLink activeClassName="nav-link-selected" to='/AboutUs'>За нас</NavLink>
             </li>
             <li>
                <Link to='#'> Солни стаи </Link>                   

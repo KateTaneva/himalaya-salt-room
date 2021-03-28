@@ -14,10 +14,10 @@ function App() {
       <Header />
       <Main />
       <Switch>
+        <Route path="/" component={Header} />
+        <Route path="/" component={AboutUs} />
+        <Route path="/" component={SaltRooms} />
         <Route path="/more-info" component={MoreInfo} />
-        <Route path="/"component={Header}/>
-        <Route path="/"component={AboutUs}/>
-        <Route path="/"component={SaltRooms}/>
 
       </Switch>
       <Footer />
