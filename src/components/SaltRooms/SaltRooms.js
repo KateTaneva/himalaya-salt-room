@@ -1,11 +1,32 @@
-// import '/SaltRoom.css';
+import '../services/moreInfoService';
 
+const SaltRooms = ({
+    id,
+    name,
+    duration,
+    category,
+    people,
+}) => {
 
-// const SaltRooms =({}) =>{
+    return (
+        <div className="wrapper">
+            <article className="adultsRooms" >
+                <h2 className="adultsRoomsTitle">{name}</h2>
+                <ul>
+                    <li>Продължителност: {duration}</li>
+                    <li>Максимален брой души в стаята: {people}</li>
+                </ul>
+            </article>
+            <article className="childrensRooms">
+                <h2 className="childrensRoomsTitle">{name}</h2>
+                <ul>
+                    <li>Продължителност: {duration}</li>
+                    <li>Максимален брой души в стаята: {people}</li>
+               </ul>
+            </article>
+        </div>
 
-//     return(
+    );
 
-//     );
-
-// }
-// export default SaltRooms;
+}
+export default SaltRooms;

@@ -1,4 +1,4 @@
-// const url = 'http://localhost:5000/info';
+ const url = 'http://localhost:5000/info';
 
 
 // export const getOne = ({category: effect}) => {
