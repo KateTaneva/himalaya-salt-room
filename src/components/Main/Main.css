@@ -1,0 +1,45 @@
+.main-wrapper {
+  background-image: url('./salt-room.jpg');
+  background: linear-gradient(
+      to right,
+      rgb(204, 190, 190),
+      rgba(250, 249, 249, 0.3)
+    ),
+    url("./salt-room.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:-48px;
+}
+
+.main-section-description {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-section-description-article {
+  text-align: center;
+  width: 25%;
+  border: 2px solid rgb(109, 154, 92);
+  border-radius: 12px;
+  background: transparent;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(51, 133, 111);
+  padding-top:50px;
+}
+
+#root > div > main > a {
+  padding-left: 900px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+ 
+}

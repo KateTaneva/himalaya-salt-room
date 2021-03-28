@@ -1,0 +1,36 @@
+footer {
+  background: rgb(223, 179, 98);
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list {
+  display: flex;
+  margin-left:-50px;
+}
+.footer-list li {
+  list-style: none;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.footer-list li i {
+  margin: 15px auto;
+}
+.footer-list-contacts {
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-list-contacts li {
+  margin-left: 30px;
+  color: #6a411d;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+}
