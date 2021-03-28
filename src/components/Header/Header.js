@@ -1,4 +1,5 @@
 import './Header.css';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -7,13 +8,13 @@ const Header = () => {
         <img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img>
         <ul className='header-list'>
             <li>
-                Начало
+                <Link to="/" >Начало</Link>
             </li>
             <li>
-                За нас
+                <Link to='/AboutUs'>За нас</Link>
             </li>
             <li>
-                Солни стаи                    
+               <Link to='#'> Солни стаи </Link>                   
             </li>
             <li>
                 Масажи                   
