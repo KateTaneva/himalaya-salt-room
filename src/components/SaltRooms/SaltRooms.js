@@ -1,4 +1,4 @@
-import '../services/moreInfoService';
+import * as moreInfoService from '../services/moreInfoService';
 
 const SaltRooms = ({
     id,
