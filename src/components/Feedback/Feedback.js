@@ -1,13 +1,18 @@
 import * as moreInfoService from '../../components/services/moreInfoService';
 
-const Feedback = () => {
+const Feedback = ({
+    history,
+}) => {
 
     const onCreateCommentSubmitHandler = (e) => {
         e.preventDefault();
 
         const {name, description, imageURL} = e.target;
-        moreInfoService.create(name.value, description.value, imageURL.value);
-        
+        moreInfoService.create(name.value, description.value, imageURL.value)
+        .then(() => {
+            history.push('/');
+        })
+       
     }
     return (
         <section className="create">
@@ -15,14 +20,14 @@ const Feedback = () => {
                 <fieldset>
                     <legend>Добави коментар</legend>
                     <p className="field">
-                        <label for="name">Име</label>
+                        <label htmlFor="name">Име</label>
                         <span className="input">
                             <input type="text" name="name" id="name" placeholder="Name" />
                             <span className="actions"></span>
                         </span>
                     </p>
                     <p className="field">
-                        <label for="description">Description</label>
+                        <label htmlFor="description">Description</label>
                         <span className="input">
                             <textarea rows="4" cols="45" type="text" name="description" id="description"
                                 placeholder="Description"></textarea>
@@ -30,7 +35,7 @@ const Feedback = () => {
                         </span>
                     </p>
                     <p class="field">
-                        <label for="image">Image</label>
+                        <label htmlFor="image">Image</label>
                         <span className="input">
                             <input type="text" name="imageURL" id="image" placeholder="Сподели снимка" />
                             <span className="actions"></span>
