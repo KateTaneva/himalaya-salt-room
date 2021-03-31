@@ -1,4 +1,5 @@
 import './Footer.css';
+import {Link} from 'react-router-dom';
 
 
 const Footer = () => {
@@ -22,6 +23,9 @@ const Footer = () => {
                         Контакти
             </li>
                 </ul>
+            </div>
+            <div className="feedback">
+                <button type="submit">Обратна връзка</button>
             </div>
             <div className='footer-list-div'>
 <h5>Сподели с приятели</h5>

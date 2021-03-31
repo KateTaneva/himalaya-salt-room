@@ -14,3 +14,19 @@ export const getOne = (category = "effect") => {
     .then((res)=> res.json())
     .catch((error) => console.log(error))
 }
+
+export const create = (customerName, description, imageURL) =>{
+
+    let comment = {
+        name: customerName,
+        description,
+        imageURL,
+    }
+    return fetch(url, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(comment)
+    })
+}
