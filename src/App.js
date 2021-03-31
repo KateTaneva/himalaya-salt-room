@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
 import SaltRooms from './components/SaltRooms/SaltRooms';
 import Feedback from './components/Feedback/Feedback';
+import Massages from './components/Massages/Massages';
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
       <Header />
       <Main />
       <Switch>
-        <Route path="/Header" component={Header} />
+
         <Route path="/AboutUs" component={AboutUs} />
         <Route path="/SaltRooms" component={SaltRooms} />
-        <Route path="/more-info" component={MoreInfo} />
-        <Route path="/Feedback" component={Feedback} />
 
+        <Route path="/Feedback" component={Feedback} />
+        <Route path="/Header" component={Header} />
+        <Route path="/Massages" component={Massages} />
+        <Route path="/moreInfo" component={MoreInfo} />
       </Switch>
       <Footer />
     </div>

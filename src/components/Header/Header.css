@@ -39,3 +39,6 @@ button {
   cursor: pointer;
 }
 
+button {
+  margin-right: 0;
+}

@@ -23,10 +23,10 @@ const Header = () => {
             <li>
                 Контакти                    
             </li>
+            <li><button>Вход</button></li>
         </ul>
     </nav>
-            {/* <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/d0/75/2b/the-salt-room-restaurant.jpg" alt="logo"></img> */}
-        <button>Вход</button>
+        
         </header>
 
     )

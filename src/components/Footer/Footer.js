@@ -1,5 +1,5 @@
 import './Footer.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
                 <button type="submit">Обратна връзка</button>
             </div>
             <div className='footer-list-div'>
-<h5>Сподели с приятели</h5>
+                <h5>Сподели с приятели</h5>
                 <ul className='footer-list'>
                     <li>
                         <i class="fab fa-instagram"></i>
