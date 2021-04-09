@@ -16,7 +16,7 @@ const Header = ({
                         <Link to="/" >Начало</Link>
                     </li>
                     <li>
-                        <NavLink activeClassName="nav-link-selected" to='/AboutUs'>За нас</NavLink>
+                        <Link to='/characteristics' >Характеристики</Link>
                     </li>
                     <li>
                         <Link to='/SaltRooms'> Солни стаи </Link>
@@ -25,7 +25,7 @@ const Header = ({
                         Масажи
             </li>
                     <li>
-                        Контакти
+                    <Link to="/contact-us" >Контакти</Link>   
             </li>
                     <li >
                         <Link to="/login" className="submit">

@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import MoreInfo from './components/MoreInfo/MoreInfo';
 import Footer from './components/Footer/Footer';
-import AboutUs from './components/AboutUs/AboutUs';
+import ContactUs from './components/ContactUs/ContactUs';
 import SaltRooms from './components/SaltRooms/SaltRooms';
 import Feedback from './components/Feedback/Feedback';
 import Massages from './components/Massages/Massages';
@@ -33,7 +33,7 @@ function App() {
       <Switch>
         {/* <Route path="/" exact component={} /> */}
 
-        <Route path="/AboutUs" component={AboutUs} />
+        <Route path="/contact-us" component={ContactUs} />
         <Route path="/SaltRooms" component={SaltRooms} />
 
         <Route path="/Feedback" component={Feedback} />
