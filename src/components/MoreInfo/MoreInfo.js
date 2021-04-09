@@ -32,10 +32,10 @@ class MoreInfo extends Component {
     render() {
        return(
         <section >
-        < h1 > Влияние на солта върху организма</h1>
+        <h1> Влияние на солта върху организма</h1>
         <article >
             <h3>{this.props.title}</h3>
-            <p >{this.props.description}</p>
+            <p>{this.props.description}</p>
         </article>
     </section>
        )
