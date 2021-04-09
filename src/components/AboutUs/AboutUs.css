@@ -1,0 +1,22 @@
+.address {
+  height: 300px;
+  background: #c7ac97;
+  margin-top: -20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+text-align: center;
+  background: rgb(220, 206, 200);
+}
+.image img {
+  width: 150px;
+  border-radius: 80px;
+  margin-top: 20px;
+}
+
+.address {
+  background: transparent;
+  padding-top: 50px;
+}

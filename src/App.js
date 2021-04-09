@@ -13,16 +13,26 @@ import { auth } from './utils/firebase';
 import Login from './components/Login/Login'
 import Register from './components/Register/Register';
 
+import { useEffect, useState } from "react";
 
 
 
 function App() {
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    auth.onAuthStateChanged(setUser)
+  }, []);
+
   return (
     <div className="container">
-      <Header />
+      <Header username={user?.email} isAuthenticated={Boolean(user)} />
+      <h1>{user?.email}</h1>
       <Main />
       <Switch>
-      
+        {/* <Route path="/" exact component={} /> */}
+
         <Route path="/AboutUs" component={AboutUs} />
         <Route path="/SaltRooms" component={SaltRooms} />
 
