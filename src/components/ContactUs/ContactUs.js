@@ -1,6 +1,6 @@
 import './ContactUs.css';
 
-const AboutUs = () => {
+const ContactUs = () => {
 
     return (
         <article className='wrapper'>
@@ -24,4 +24,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs;
+export default ContactUs;

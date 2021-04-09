@@ -11,16 +11,14 @@ header {
   justify-content: space-between;
   margin: 0 50px;
   padding: 15px 30px;
-
+  width: 100vw;
 }
 
 .header-list {
-  list-style: none;
   font-size: 20px;
   display: flex;
   padding-top: 80px;
- 
-
+  margin-left: -520px;
 }
 
 .header-list li {
@@ -40,14 +38,23 @@ header {
 
 .submit {
   cursor: pointer;
-  border-radius: 54px;
-  padding:10px;
-  background-color:white;
+  border-radius: 12px;
+  padding: 6px 15px;
+  background-color: rgb(152, 69, 69);
   text-decoration: none;
-
+  color: rgb(216, 207, 207);
+  font-size: ;
 }
 
-.header-list li a{
+.header-list li a {
   text-decoration: none;
-  color:rgb(198, 190, 190);
+  color: rgb(198, 190, 190);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  text-decoration: none;
+  list-style: none;
 }

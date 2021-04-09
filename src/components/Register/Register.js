@@ -24,20 +24,33 @@ const onRegisterSubmitHandler = (e) =>{
                 <legend>Регистрация</legend>
                 <p className="field">
                     <label htmlFor="username">Потребителско име</label>
+                    <i className="fas fa-user"></i>
                     <span className="input">
                         <input type="text" name="username" id="username" placeholder="Username" />
                         <span className="actions"></span>
-                        <i className="fas fa-user"></i>
+                        
                     </span>
                 </p>
                 <p className="field">
                     <label htmlFor="password">Парола</label>
+                    <i className="fas fa-key"></i>
                     <span className="input">
-                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <input type="password" name="password" id="password" placeholder="New Password" />
                         <span className="actions"></span>
-                        <i className="fas fa-key"></i>
+                        
                     </span>
                 </p>
+
+                <p className="field">
+                    <label htmlFor="password">Повтори парола</label>
+                    <i className="fas fa-key"></i>
+                    <span className="input">
+                        <input type="password" name="password" id="password" placeholder="Repeat Password" />
+                        <span className="actions"></span>
+                        
+                    </span>
+                </p>
+
                 <input className="button" type="submit" class="submit" value="Register" />
             </fieldset>
         </form>

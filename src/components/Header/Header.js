@@ -11,7 +11,7 @@ const Header = ({
             <nav className='header-nav'>
                 <img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img>
                 <ul className='header-list'>
-               
+
                     <li>
                         <Link to="/" >Начало</Link>
                     </li>
@@ -25,23 +25,29 @@ const Header = ({
                         Масажи
             </li>
                     <li>
-                    <Link to="/contact-us" >Контакти</Link>   
-            </li>
-                    <li >
-                        <Link to="/login" className="submit">
-                            <i class="fas fa-sign-in-alt"></i> Вход
-              </Link>
-                        <Link to="/register" className="submit">
-                            <i class="fas fa-user"></i> Регистрация
-              </Link>
-                        <Link to="/logout" className="submit">
-                            <i class="fas fa-sign-out-alt"></i> Излизане
-                </Link>
+                        <Link to="/contact-us" >Контакти</Link>
                     </li>
-                    {isAuthenticated
+                </ul>
+                <ul className='buttons'>
+                    <li>
+                        <Link to="/login" className="submit">
+                            <i class="fas fa-sign-in-alt"></i> Вход </Link>
+                        {/* {isAuthenticated
                 ? <li>Welcome, {username}!</li>
                 : <li>Welcome, Guest!</li>
-              }
+              } */}
+
+                    </li>
+
+                    <li >
+                        <Link to="/register" className="submit">
+                            <i class="fas fa-user"></i> Регистрация</Link>
+                    </li>
+                    <li>
+                        <Link to="/logout" className="submit">
+                            <i class="fas fa-sign-out-alt"></i> Изход</Link>
+                    </li>
+
                 </ul>
             </nav>
 
