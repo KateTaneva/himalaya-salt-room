@@ -45,7 +45,7 @@ function App() {
         <Route path="/register" component={Register} />
         <Route path="/logout" render={props => {
           auth.signOut();
-          return <Redirect to='/' />
+          return <Redirect to="/" />
         }} />
 
       </Switch>
