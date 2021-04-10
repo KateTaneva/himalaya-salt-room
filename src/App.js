@@ -28,7 +28,6 @@ function App() {
   return (
     <div className="container">
       <Header username={user?.email} isAuthenticated={Boolean(user)} />
-      <h1>{user?.email}</h1>
       <Main />
       <Switch>
         {/* <Route path="/" exact component={} /> */}

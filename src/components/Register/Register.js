@@ -14,6 +14,7 @@ const onRegisterSubmitHandler = (e) =>{
         console.log('Register');
                history.push('/');
     })
+    .catch((error) => console.log(error));
 
 }
 

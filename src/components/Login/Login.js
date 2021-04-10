@@ -14,8 +14,10 @@ const Login = ({
 
         auth.signInWithEmailAndPassword(username, password)
         .then((userCredential) =>{
-            history.push('/')
-        });
+            history.push('/');
+        })
+        .catch(error=> console.log(error));
+        
     }
     return (
         <section className="login">
