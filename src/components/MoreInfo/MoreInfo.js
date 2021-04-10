@@ -9,7 +9,7 @@ class MoreInfo extends Component {
 
         this.state = {
             title: '',
-            category: 'effect',
+            category: '',
             description: '',
         };
     }

@@ -1,6 +1,5 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
 
 const Header = ({
     isAuthenticated,
@@ -19,7 +18,7 @@ const Header = ({
                         <Link to='/characteristics' >Характеристики</Link>
                     </li>
                     <li>
-                        <Link to='/SaltRooms'> Солни стаи </Link>
+                        <Link to='/salt-rooms'> Солни стаи </Link>
                     </li>
                     <li>
                         Масажи

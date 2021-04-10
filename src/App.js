@@ -10,7 +10,7 @@ import SaltRooms from './components/SaltRooms/SaltRooms';
 import Feedback from './components/Feedback/Feedback';
 import Massages from './components/Massages/Massages';
 import { auth } from './utils/firebase';
-import Login from './components/Login/Login'
+import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 
 import { useEffect, useState } from "react";
@@ -34,11 +34,11 @@ function App() {
         {/* <Route path="/" exact component={} /> */}
 
         <Route path="/contact-us" component={ContactUs} />
-        <Route path="/SaltRooms" component={SaltRooms} />
+        <Route path="/salt-rooms" component={SaltRooms} />
 
-        <Route path="/Feedback" component={Feedback} />
-        <Route path="/Header" component={Header} />
-        <Route path="/Massages" component={Massages} />
+        <Route path="/feedback" component={Feedback} />
+        <Route path="/header" component={Header} />
+        <Route path="/massages" component={Massages} />
         <Route path="/moreInfo" component={MoreInfo} />
 
         <Route path='/login' component={Login} />

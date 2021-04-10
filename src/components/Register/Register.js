@@ -12,7 +12,7 @@ const onRegisterSubmitHandler = (e) =>{
     auth.createUserWithEmailAndPassword(username, password)
     .then(userCredential => {
         console.log('Register');
-        history.push('/');
+               history.push('/');
     })
 
 }
@@ -41,15 +41,15 @@ const onRegisterSubmitHandler = (e) =>{
                     </span>
                 </p>
 
-                <p className="field">
+                {/* <p className="field">
                     <label htmlFor="password">Повтори парола</label>
                     <i className="fas fa-key"></i>
                     <span className="input">
-                        <input type="password" name="password" id="password" placeholder="Repeat Password" />
+                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password" />
                         <span className="actions"></span>
                         
                     </span>
-                </p>
+                </p> */}
 
                 <input className="button" type="submit" class="submit" value="Register" />
             </fieldset>
