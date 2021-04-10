@@ -1,0 +1,35 @@
+.book-salt-room-wrapper {
+  display: flex;
+  justify-content: center;
+  background: rgb(220, 206, 200);
+  margin:0;
+  padding:0;
+}
+.book-salt-room-wrapper img {
+  width: 180px;
+}
+
+.book-adults-room,
+.book-childrens-room {
+  border: 2px solid gray;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.book-adults-room ul,
+.book-childrens-room ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+    padding-left: 0;
+}
+.book-adults-room ul li span,
+.book-childrens-room ul li span {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: italic;
+}
+.book-childrens-room ul{
+    padding-top: 57px;
+}
