@@ -43,7 +43,6 @@ header {
   background-color: rgb(152, 69, 69);
   text-decoration: none;
   color: rgb(216, 207, 207);
-  font-size: ;
 }
 
 .header-list li a {
@@ -52,9 +51,19 @@ header {
 }
 
 .buttons {
+  width: 20%;
   display: flex;
   justify-content: space-between;
-  width: 20%;
   text-decoration: none;
   list-style: none;
+}
+.wellcome{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 20px;
+  color: rgb(198, 190, 190);
+  position: absolute;
+  margin-left: 1450px;
+  margin-top: 120px;
 }

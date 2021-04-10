@@ -1,0 +1,58 @@
+.adultsRooms ul li {
+  list-style: none;
+  font-size: 18px;
+  font-style: italic;
+}
+.childrensRooms ul li {
+  list-style: none;
+  font-size: 18px;
+  font-style: italic;
+
+}
+.adultsRooms h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.childrensRooms h2{
+    font-size: 30px;
+  
+}
+
+.wrapper-saltrooms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(220, 206, 200);
+}
+
+.wrapper-saltrooms img {
+  width: 180px;
+  margin-left: 60px;
+}
+.adultsRooms {
+  border-right: 1px solid rgb(145, 145, 84);
+  padding: 30px 50px 30px;
+}
+
+.childrensRooms {
+  padding: 30px 50px 30px;
+}
+#root > div > div > article.adultsRooms > ul {
+  padding-left: 0;
+}
+#root > div > div > article.childrensRooms > ul {
+  padding-left: 0;
+  margin-top: 70px;
+}
+
+.book-room{
+    
+    background: #bb5757;
+    color: rgb(236, 226, 226);
+    padding: 8px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    float:right;
+
+}

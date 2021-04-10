@@ -46,12 +46,14 @@ const Header = ({
                         <Link to="/logout" className="submit">
                             <i class="fas fa-sign-out-alt"></i> Изход</Link>
                     </li>
-              {isAuthenticated
-                ?(<li>Welcome, {username}!</li>)
-                :(<li>Welcome, Guest!</li>)
-              }
 
                 </ul>
+                <p className="wellcome">
+                    {isAuthenticated
+                        ? (<li>Welcome, {username}!</li>)
+                        : (<li>Welcome, Guest!</li>)
+                    }
+                </p>
             </nav>
 
         </header>
