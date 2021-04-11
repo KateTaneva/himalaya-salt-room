@@ -14,6 +14,7 @@ import BookSaltRoom from './components/BookSaltRoom/BookSaltRoom';
 import { auth } from './utils/firebase';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import BookingCalendar from './components/BookingCalendar/BookingCalendar';
 
 import { useEffect, useState } from "react";
 
@@ -35,9 +36,11 @@ function App() {
         {/* <Route path="/" exact component={} /> */}
 
         <Route path="/contact-us" component={ContactUs} />
-        <Route path="/salt-rooms" component={SaltRooms} />
+        <Route path="/salt-rooms" exact component={SaltRooms} />
         <Route path="/book-room" component={BookSaltRoom} />
-        {/* <Route path="calendar" component={Calendar} /> */}
+        <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
+        <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
+
         <Route path="/feedback" component={Feedback} />
         <Route path="/header" component={Header} />
         <Route path="/massages" component={Massages} />
