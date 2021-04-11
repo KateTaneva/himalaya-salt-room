@@ -1,6 +1,9 @@
 @import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
 
-
+.container{
+  background: #DCCEC8;
+  
+}
 .container-logo {
   height: 40vmin;
   pointer-events: none;
