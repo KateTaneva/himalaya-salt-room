@@ -7,7 +7,7 @@ const BookingCalendar = () => {
                 <ul>
                     <li className="prev"><i class="fas fa-chevron-left"></i></li>
                     <li className="next"><i class="fas fa-chevron-right"></i></li>
-                    <li>August<br /><span >2021</span></li>
+                    <li>April<br /><span >2021</span></li>
                 </ul>
             </div>
 
