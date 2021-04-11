@@ -54,5 +54,14 @@
     border-radius: 14px;
     text-decoration: none;
     float:right;
+    font-size:18px;
+  
 
+}
+
+.book-room:hover{
+    background: white;
+    color:rgb(88, 88, 53);
+    font-weight: bold;
+   
 }

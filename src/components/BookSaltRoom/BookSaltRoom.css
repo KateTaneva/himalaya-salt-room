@@ -15,6 +15,7 @@
   padding: 80px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .book-adults-room ul,
 .book-childrens-room ul {
@@ -27,9 +28,21 @@
 .book-adults-room ul li span,
 .book-childrens-room ul li span {
   text-decoration: none;
-  font-size: 20px;
-  font-style: italic;
+  font-size: 30px;
+  
 }
+
 .book-childrens-room ul{
     padding-top: 57px;
+}
+
+.book-salt-room-wrapper  ul i {
+    color: white;
+    width: 30%;
+}
+
+.book-adults-room:hover, 
+.book-childrens-room:hover{
+    color: white;
+    background:rgb(220, 141, 128)
 }

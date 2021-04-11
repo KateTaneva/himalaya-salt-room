@@ -1,4 +1,4 @@
-  
+
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import './App.css';
@@ -36,8 +36,8 @@ function App() {
 
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/salt-rooms" component={SaltRooms} />
-        <Route path="/book-room" component={BookSaltRoom}/>
-
+        <Route path="/book-room" component={BookSaltRoom} />
+        {/* <Route path="calendar" component={Calendar} /> */}
         <Route path="/feedback" component={Feedback} />
         <Route path="/header" component={Header} />
         <Route path="/massages" component={Massages} />
