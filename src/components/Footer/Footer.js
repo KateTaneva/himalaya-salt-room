@@ -5,30 +5,12 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer>
-            <div>
-                <ul className='footer-list-contacts'>
-                    <li>
-                        Начало
-            </li>
-                    <li>
-                        За нас
-            </li>
-                    <li>
-                        Солни стаи
-            </li>
-                    <li>
-                        Масажи
-            </li>
-                    <li>
-                        Контакти
-            </li>
-                </ul>
-            </div>
+
             <div className="feedback">
-                <button type="submit">Обратна връзка</button>
+                <Link to="/feedback" type="submit">Обратна връзка</Link>
             </div>
             <div className='footer-list-div'>
-                <h5>Сподели с приятели</h5>
+
                 <ul className='footer-list'>
                     <li>
                         <i class="fab fa-instagram"></i>

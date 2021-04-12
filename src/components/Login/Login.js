@@ -17,7 +17,7 @@ const Login = ({
             history.push('/');
         })
         .catch((error)=> {
-            if(password.length < 8 ){
+            if(password.length < 10 ){
                 throw("Password is too short!")
             }else{
                 history.push('/characteristics')

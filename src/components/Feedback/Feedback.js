@@ -1,4 +1,5 @@
 import * as moreInfoService from '../../components/services/moreInfoService';
+// import 'Feedback.css';
 
 const Feedback = ({
     history,

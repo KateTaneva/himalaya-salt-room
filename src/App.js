@@ -16,7 +16,7 @@
 // import BookSaltRoom from './components/BookSaltRoom/BookSaltRoom';
 // import BookingCalendar from './components/BookingCalendar/BookingCalendar';
 // import { useEffect, useState } from "react";
-
+// import Appointment from './components/Appointment/Appointment';
 
 
 // function App() {
@@ -43,8 +43,12 @@
 //         <Route path="/contact-us" render={props => <ContactUs {...props} {...authInfo} />} />
 //         <Route path="/salt-rooms" render={props => <SaltRooms {...props} {...authInfo} />} />
 //         <Route path="/book-room" component={BookSaltRoom} />
-//         <Route path="/salt-rooms/book-room/booking-calendar" render={props => <BookingCalendar {...props} {...authInfo}/>} />
-//         <Route path="/salt-rooms/book-room/booking-calendar" render={props => <BookingCalendar {...props} {...authInfo}/>} />
+//         <Route path="/salt-rooms/book-room/booking-calendar" render={props => <BookingCalendar {...props} {...authInfo} />} />
+//         <Route path="/salt-rooms/book-room/booking-calendar" render={props => <BookingCalendar {...props} {...authInfo} />} />
+//         <Route  path="/salt-rooms/book-room/booking-calendar">
+//           {!user ? <Redirect to="/booking-calendar/appointment" /> : <Appointment />}
+//         </Route>
+//         <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo} />} />
 
 //         <Route path="/feedback" render={props => <Feedback {...props} {...authInfo} />} />
 //         <Route path="/header" render={props => <Header {...props} {...authInfo} />} />
