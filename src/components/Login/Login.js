@@ -16,7 +16,13 @@ const Login = ({
         .then((userCredential) =>{
             history.push('/');
         })
-        .catch(error=> console.log(error));
+        .catch((error)=> {
+            if(password.length < 8 ){
+                throw("Password is too short!")
+            }else{
+                history.push('/characteristics')
+            }
+        });
         
     }
     return (

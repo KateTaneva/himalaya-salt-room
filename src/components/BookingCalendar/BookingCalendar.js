@@ -1,4 +1,5 @@
 import './BookingCalendar.css';
+import { Link } from 'react-router-dom';
 
 const BookingCalendar = () => {
     return (
@@ -22,41 +23,41 @@ const BookingCalendar = () => {
             </ul>
 
             <ul className="days">
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li><span className="active">10</span></li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>1</li>
-                <li>2</li>
+                <li><Link to='#'></Link></li>
+                <li><Link to='#'></Link></li>
+                <li><Link to='#'></Link></li>
+                <li><Link to="/booking-calendar/appointment">1</Link></li>
+                <li><Link to="/booking-calendar/appointment">2</Link></li>
+                <li><Link to="/booking-calendar/appointment">3</Link></li>
+                <li><Link to="/booking-calendar/appointment">4</Link></li>
+                <li><Link to="/booking-calendar/appointment">5</Link></li>
+                <li><Link to="/booking-calendar/appointment">6</Link></li>
+                <li><Link to="/booking-calendar/appointment">7</Link></li>
+                <li><Link to="/booking-calendar/appointment">8</Link></li>
+                <li><Link to="/booking-calendar/appointment">9</Link></li>
+                <li><span className="active"><Link to="booking-calendar/appointment">10</Link></span></li>
+                <li><Link to="/booking-calendar/appointment">11</Link></li>
+                <li><Link to="/booking-calendar/appointment">12</Link></li>
+                <li><Link to="/booking-calendar/appointment">13</Link></li>
+                <li><Link to="/booking-calendar/appointment">14</Link></li>
+                <li><Link to="/booking-calendar/appointment">15</Link></li>
+                <li><Link to="/booking-calendar/appointment">16</Link></li>
+                <li><Link to="/booking-calendar/appointment">17</Link></li>
+                <li><Link to="/booking-calendar/appointment">18</Link></li>
+                <li><Link to="/booking-calendar/appointment">19</Link></li>
+                <li><Link to="/booking-calendar/appointment">20</Link></li>
+                <li><Link to="/booking-calendar/appointment">21</Link></li>
+                <li><Link to="/booking-calendar/appointment">22</Link></li>
+                <li><Link to="/booking-calendar/appointment">23</Link></li>
+                <li><Link to="booking-calendar/appointment">24</Link></li>
+                <li><Link to="/booking-calendar/appointment">25</Link></li>
+                <li><Link to="/booking-calendar/appointment">26</Link></li>
+                <li><Link to="/booking-calendar/appointment">27</Link></li>
+                <li><Link to="/booking-calendar/appointment">28</Link></li>
+                <li><Link to="/booking-calendar/appointment">29</Link></li>
+                <li><Link to="/booking-calendar/appointment">30</Link></li>
+                <li><Link to="/booking-calendar/appointment"></Link></li>
+                <li><Link to="/booking-calendar/appointment"></Link></li>
 
             </ul>
 
