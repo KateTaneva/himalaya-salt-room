@@ -6,9 +6,11 @@ const Footer = () => {
     return (
         <footer>
 
-            <div className="feedback">
-                <Link to="/feedback" type="submit">Обратна връзка</Link>
+      <article className='footer-article'>
+      <div className="feedback">
+                <Link to="/feedback" type="submit">Коментар</Link>
             </div>
+            <div className="copy-rights">&copy;HimalayanSalt&Body</div>
             <div className='footer-list-div'>
 
                 <ul className='footer-list'>
@@ -26,6 +28,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
+      </article>
 
         </footer>
     )
