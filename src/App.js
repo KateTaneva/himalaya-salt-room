@@ -119,7 +119,7 @@ function App() {
         <Route path="/feedback" component={Feedback} />
         <Route path="/header" component={Header} />
         <Route path="/massages" component={Massages} />
-        <Route path="/moreInfo" component={MoreInfo} />
+        <Route path="/more-info" component={MoreInfo} />
 
         <Route path='/login' component={Login} />
         <Route path="/register" component={Register} />

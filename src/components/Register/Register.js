@@ -24,7 +24,7 @@ const onRegisterSubmitHandler = (e) =>{
             <fieldset>
                 <legend>Регистрация</legend>
                 <p className="field">
-                    <label htmlFor="username">Потребителско име</label>
+                    <label htmlFor="username">Email</label>
                     <i className="fas fa-user"></i>
                     <span className="input">
                         <input type="text" name="username" id="username" placeholder="Username" />
@@ -33,7 +33,7 @@ const onRegisterSubmitHandler = (e) =>{
                     </span>
                 </p>
                 <p className="field">
-                    <label htmlFor="password">Парола</label>
+                    <label htmlFor="password">Password</label>
                     <i className="fas fa-key"></i>
                     <span className="input">
                         <input type="password" name="password" id="password" placeholder="New Password" />
@@ -52,7 +52,7 @@ const onRegisterSubmitHandler = (e) =>{
                     </span>
                 </p> */}
 
-                <input className="button" type="submit" class="submit" value="Register" />
+                <input className="button" type="submit" class="submit" value="Регистрация" />
             </fieldset>
         </form>
     </section>

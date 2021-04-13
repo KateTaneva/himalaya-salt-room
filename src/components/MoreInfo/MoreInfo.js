@@ -15,8 +15,11 @@ class MoreInfo extends Component {
     }
 
     componentDidMount() {
-        moreInfoService.getAll()
+        moreInfoService.getOne()
             .then((res) => this.setState({ title: res, description: res }))
+            .catch((err)=> {
+                console.log(" 404 Not found!");
+            });
     }
 
     componentDidUpdate(prevProps) {

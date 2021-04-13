@@ -1,8 +1,5 @@
 import './Appointment.css';
-import { Link } from 'react-router-dom';
-import { Redirect} from 'react-router-dom'
-
-
+import * as moreInfoService from '../../components/services/moreInfoService';
 
 const Appointment = (
     history
@@ -12,19 +9,18 @@ const Appointment = (
         e.preventDefault();
 
 
-         
-      console.log("Избраният час е запазен!");
-     
-    //   <Redirect to='./main' /> 
-        
-      
+        console.log("Избраният час е запазен!");
 
-           }
+        history.push('/')
+
+
+    }
     return (
         <section className="appointment">
             <article className="appointment-wrapper">
 
                 <form onSubmit={onAppointmentSubmitHandler} >
+
                     <label htmlFor='hour'>Свободни часове</label>
                     <select type="text" name="free-hours" placeholder="Избери час" className='options'>
                         <option value="hour" ></option>
@@ -42,7 +38,7 @@ const Appointment = (
                         Име и фамилия:
                 </label>
                     <input className="appointment-text" type="text" />
-                    <input className='submit'  className="appointment-button" type="submit" />
+                    <input className='button' className="appointment-button" type="submit" value="Запази" />
 
                 </form>
 

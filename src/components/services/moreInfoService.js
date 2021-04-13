@@ -30,3 +30,4 @@ export const create = (customerName, description, imageURL) =>{
         body: JSON.stringify(comment)
     })
 }
+

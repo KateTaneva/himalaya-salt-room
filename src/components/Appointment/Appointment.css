@@ -43,3 +43,14 @@ form {
 }
 
 
+.appointment-button{
+    font-size:22px;
+    background:peachpuff;
+    padding: 8px 30px;
+    border-radius: 12px;
+}
+.appointment-button:hover{
+    background: #A64C2B;
+    color:white;
+   
+}
