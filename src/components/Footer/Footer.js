@@ -8,7 +8,7 @@ const Footer = () => {
 
       <article className='footer-article'>
       <div className="feedback">
-                <Link to="/feedback" type="submit">Коментар</Link>
+                <Link to="/feedback" type="submit">Feedback</Link>
             </div>
             <div className="copy-rights">&copy;HimalayanSalt&Body</div>
             <div className='footer-list-div'>

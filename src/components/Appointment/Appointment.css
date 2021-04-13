@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  font-size: 24px;
+  color: rgb(64, 62, 62);
+  line-height: 50px;
+  margin: 0 160px;
+}
+
+.options {
+  width: 200px;
+  border-radius: 6px;
+  border: 2px solid rgb(88, 82, 82);
+}
+
+
+.appointment-text {
+  color: rgb(64, 62, 62);
+  width: 300px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.appointment-wrapper label {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.appointment-wrapper {
+    background-image: url("https://uploads-ssl.webflow.com/5f295b6798ab9a2f97214d46/5f2aed31e4551320ae6823c2_salt(Edited).png");
+  display: flex; 
+   align-items: center;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+
