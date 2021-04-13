@@ -1,17 +1,23 @@
-import './Appointment.css';
 import * as moreInfoService from '../../components/services/moreInfoService';
+import { Redirect }from 'react-router-dom';
+import './Appointment.css';
 
 const Appointment = (
     history
 ) => {
 
     const onAppointmentSubmitHandler = (e) => {
-        e.preventDefault();
-
-
+       
         console.log("Избраният час е запазен!");
 
-        history.push('/')
+
+        const client = e.target;
+        moreInfoService.create(client.value)
+            .then(()=> {
+               <Redirect to='/'/>
+            })
+        
+
 
 
     }
@@ -39,11 +45,13 @@ const Appointment = (
                 </label>
                     <input className="appointment-text" type="text" />
                     <input className='button' className="appointment-button" type="submit" value="Запази" />
-
+                   
                 </form>
 
-            </article>
-        </section>
+
+
+            </article >
+        </section >
 
     )
 }

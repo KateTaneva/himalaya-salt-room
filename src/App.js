@@ -88,12 +88,14 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import BookingCalendar from './components/BookingCalendar/BookingCalendar';
 import Appointment from './components/Appointment/Appointment';
+import Characteristics from './components/Characteristics/Characteristics';
 
 import { useEffect, useState } from "react";
 
 
 
 function App() {
+
 
   const [user, setUser] = useState(null);
 
@@ -106,7 +108,6 @@ function App() {
       <Header username={user?.email} isAuthenticated={Boolean(user)} />
       <Main />
       <Switch>
-        {/* <Route path="/" exact component={} /> */}
 
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/salt-rooms" exact component={SaltRooms} />
@@ -115,11 +116,11 @@ function App() {
         <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
         <Route path="/booking-calendar/appointment" component={Appointment}/>
 
-
+        <Route path='/characteristics' component={Characteristics}/>
         <Route path="/feedback" component={Feedback} />
         <Route path="/header" component={Header} />
         <Route path="/massages" component={Massages} />
-        <Route path="/more-info" component={MoreInfo} />
+        <Route path="/main/:more-info" component={MoreInfo} />
 
         <Route path='/login' component={Login} />
         <Route path="/register" component={Register} />

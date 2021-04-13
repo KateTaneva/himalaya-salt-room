@@ -8,7 +8,7 @@ export const getAll = ({category: effect}) => {
 }
 
 export const getOne = (category = "effect") => {
-    let effectType = category ? `?category=${category}` : "";
+    let effectType = category ? `category=${category}` : "";
 
     return fetch(effectType)
     .then((res)=> res.json())

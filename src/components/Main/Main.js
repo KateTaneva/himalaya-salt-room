@@ -6,7 +6,7 @@ const Main = () => {
         <main className='main-wrapper'>
             <h1 className="main-title">Солните стаи подпомагат укрепването на здравето и имунната система!</h1>
            <div className='more-info'>
-          <Link to="/MoreInfo" className="more-info">Прочети повече</Link>
+          <Link to="/main/:more-info" className="more-info">Прочети повече</Link>
            </div>
             <section className="main-section-description">
                 <article className="main-section-description-article">
