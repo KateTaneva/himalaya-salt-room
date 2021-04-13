@@ -1,0 +1,28 @@
+.characteristics-section {
+    margin:50px 100px;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.single-effect{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25vw;
+}
+
+.single-effect h4{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color:#8c462f;
+}
+
+main{
+    display: none;
+}

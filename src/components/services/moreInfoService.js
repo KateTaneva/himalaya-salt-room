@@ -8,11 +8,11 @@ export const getAll = ({category: effect}) => {
 }
 
 export const getOne = (category = "effect") => {
-    let effectType = category ? `category=${category}` : "";
+    let effectType = category? `category=${category}` : "";
 
     return fetch(effectType)
     .then((res)=> res.json())
-    .catch((error) => console.log(error))
+      .catch((error) => console.log(error))
 }
 
 export const create = (customerName, description, imageURL) =>{
