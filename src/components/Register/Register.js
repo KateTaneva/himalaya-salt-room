@@ -12,7 +12,7 @@ const onRegisterSubmitHandler = (e) =>{
     auth.createUserWithEmailAndPassword(username, password)
     .then(userCredential => {
         console.log('Register');
-               history.push('/');
+               history.push('/characteristics');
     })
     .catch((error) => console.log(error));
 

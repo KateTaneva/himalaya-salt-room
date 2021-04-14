@@ -28,6 +28,15 @@ export const create = (customerName, description, imageURL) =>{
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(comment)
-    })
+    });
 }
 
+export const update = (feedbackId, description)=>{
+    return fetch(`${url}/${feedbackId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({description})
+    });
+}

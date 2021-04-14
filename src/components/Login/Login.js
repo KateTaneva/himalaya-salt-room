@@ -14,13 +14,15 @@ const Login = ({
 
         auth.signInWithEmailAndPassword(username, password)
         .then((userCredential) =>{
-            history.push('/');
+           
+            history.push('/characteristics');
         })
         .catch((error)=> {
             if(password.length < 10 ){
                 throw("Password is too short!")
             }else{
-                history.push('/characteristics')
+               
+                history.push('/characteristics');
             }
         });
         

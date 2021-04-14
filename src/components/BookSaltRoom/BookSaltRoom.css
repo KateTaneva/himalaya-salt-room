@@ -46,3 +46,6 @@
     color: white;
     background:rgb(220, 141, 128)
 }
+#root > div > div > h1{
+    padding-top:0;
+}

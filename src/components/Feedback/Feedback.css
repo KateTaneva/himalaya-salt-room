@@ -1,4 +1,50 @@
 .field-description{
     display: inline-flex;
 }
+/*  */
 
+.create {
+    background-image:url('https://media3.s-nbcnews.com/i/newscms/2019_28/2928621/190710-salt-therapy-spa-room-alllergy-skin-treatment-ac-504p_d9e828d61de9593dc62cdf5fea9338d5.jpg');
+    background-repeat: no-repeat;
+    object-fit:cover;
+    display: flex;
+    flex-grow: 1;
+    width: 100vw;
+    height: 100vh;
+    position:center;
+    margin:0;
+    padding:0;
+}
+
+.create-feedback{
+    justify-content: center;
+    margin: 200px auto;
+   
+}
+
+legend {
+    color: white;
+    font-style: italic;
+}
+.create-feedback label {
+    color:white;
+    padding-right: 20px;
+    align-self: center;
+    justify-content: center;
+       
+}
+
+.create-feedback input{
+    width: 280px;
+    height: 30px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#root > div > section > form > fieldset > input{
+    align-self: center;
+}

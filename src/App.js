@@ -76,12 +76,12 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
-import MoreInfo from './components/MoreInfo/MoreInfo';
 import Footer from './components/Footer/Footer';
 import ContactUs from './components/ContactUs/ContactUs';
 import SaltRooms from './components/SaltRooms/SaltRooms';
 import Feedback from './components/Feedback/Feedback';
-import Massages from './components/Massages/Massages';
+import AllFeedbacks from './components/AllFeedbacks/AllFeedbacks';
+import EditFeedback from './components/EditFeedback/EditFeedback';
 import BookSaltRoom from './components/BookSaltRoom/BookSaltRoom';
 import { auth } from './utils/firebase';
 import Login from './components/Login/Login';
@@ -118,10 +118,10 @@ function App() {
 
         <Route path='/characteristics' component={Characteristics}/>
         <Route path="/feedback" component={Feedback} />
-        <Route path="/header" component={Header} />
-        <Route path="/massages" component={Massages} />
-        <Route path="/main/:more-info" component={MoreInfo} />
+        <Route path="/allfeedbacks" component={AllFeedbacks} />
+        <Route path="/feedback/all-feedbacks/edit" component={EditFeedback}/>
 
+        <Route path="/header" component={Header} />
         <Route path='/login' component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/logout" render={props => {

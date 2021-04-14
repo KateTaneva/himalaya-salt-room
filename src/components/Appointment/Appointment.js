@@ -1,5 +1,4 @@
 import * as moreInfoService from '../../components/services/moreInfoService';
-import { Redirect }from 'react-router-dom';
 import './Appointment.css';
 
 const Appointment = (
@@ -14,10 +13,11 @@ const Appointment = (
         const client = e.target;
         moreInfoService.create(client.value)
             .then(()=> {
-               <Redirect to='/'/>
+               history.push('/')
+               
             })
-        
-
+                 .catch(err => console.log(err))
+       
 
 
     }

@@ -1,14 +1,10 @@
 import './Main.css';
-import {Link} from 'react-router-dom';
 
 const Main = () => {
     return (
         <main className='main-wrapper'>
             <h1 className="main-title">Солните стаи подпомагат укрепването на здравето и имунната система!</h1>
-           <div className='more-info'>
-          <Link to="/main/:more-info" className="more-info">Прочети повече</Link>
-           </div>
-            <section className="main-section-description">
+                      <section className="main-section-description">
                 <article className="main-section-description-article">
                     <h4>ДИХАТЕЛНА СИСТЕМА</h4>
                     <p>Със своя антибактериален, противовъзпалителен и мукорегулаторен ефект, халотерапията подпомага за отхрачването на секретите и правилното функциониране на дихателната система.</p>
