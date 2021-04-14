@@ -21,9 +21,6 @@ const Header = ({
                         <Link to='/salt-rooms'> Солни стаи </Link>
                     </li>
                     <li>
-                        Масажи
-            </li>
-                    <li>
                         <Link to="/contact-us" >Контакти</Link>
                     </li>
                 </ul>
@@ -31,10 +28,7 @@ const Header = ({
                     <li>
                         <Link to="/login" className="submit">
                             <i class="fas fa-sign-in-alt"></i> Вход </Link>
-                        {/* {isAuthenticated
-                ? <li>Welcome, {username}!</li>
-                : <li>Welcome, Guest!</li>
-              } */}
+                        
 
                     </li>
 
@@ -50,8 +44,8 @@ const Header = ({
                 </ul>
                 <p className="wellcome">
                     {isAuthenticated
-                        ? (<li>Welcome, {username}!</li>)
-                        : (<li>Welcome, Guest!</li>)
+                        ? (<li>Добре дошли, {username}!</li>)
+                        : (<li>Добре дошли!</li>)
                     }
                 </p>
             </nav>

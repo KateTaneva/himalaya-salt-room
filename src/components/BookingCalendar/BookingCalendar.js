@@ -35,7 +35,7 @@ const BookingCalendar = () => {
                 <li><Link to="/booking-calendar/appointment">7</Link></li>
                 <li><Link to="/booking-calendar/appointment">8</Link></li>
                 <li><Link to="/booking-calendar/appointment">9</Link></li>
-                <li><span className="active"><Link to="booking-calendar/appointment">10</Link></span></li>
+                <li><span className="active"><Link to="/booking-calendar/appointment">10</Link></span></li>
                 <li><Link to="/booking-calendar/appointment">11</Link></li>
                 <li><Link to="/booking-calendar/appointment">12</Link></li>
                 <li><Link to="/booking-calendar/appointment">13</Link></li>
@@ -49,7 +49,7 @@ const BookingCalendar = () => {
                 <li><Link to="/booking-calendar/appointment">21</Link></li>
                 <li><Link to="/booking-calendar/appointment">22</Link></li>
                 <li><Link to="/booking-calendar/appointment">23</Link></li>
-                <li><Link to="booking-calendar/appointment">24</Link></li>
+                <li><Link to="/booking-calendar/appointment">24</Link></li>
                 <li><Link to="/booking-calendar/appointment">25</Link></li>
                 <li><Link to="/booking-calendar/appointment">26</Link></li>
                 <li><Link to="/booking-calendar/appointment">27</Link></li>

@@ -1,5 +1,5 @@
 import * as moreInfoService from '../../components/services/moreInfoService';
-// import 'Feedback.css';
+import './Feedback.css';
 
 const Feedback = ({
     history,
@@ -8,43 +8,45 @@ const Feedback = ({
     const onCreateCommentSubmitHandler = (e) => {
         e.preventDefault();
 
+       
         const {name, description, imageURL} = e.target;
         moreInfoService.create(name.value, description.value, imageURL.value)
         .then(() => {
-            history.push('/');
+          history.push("/");
+         
         })
         .catch(error => console.log(error));
        
     }
     return (
         <section className="create">
-            <form onSubmit={onCreateCommentSubmitHandler}>
+            <form onSubmit={onCreateCommentSubmitHandler} className='create-feedback'>
                 <fieldset>
                     <legend>Добави коментар</legend>
                     <p className="field">
                         <label htmlFor="name">Име</label>
                         <span className="input">
-                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <input type="text" name="name" id="name"  />
                             <span className="actions"></span>
                         </span>
                     </p>
-                    <p className="field">
-                        <label htmlFor="description">Description</label>
+                    <p className="field-description">
+                        <label htmlFor="description" >Описание</label>
                         <span className="input">
                             <textarea rows="4" cols="45" type="text" name="description" id="description"
-                                placeholder="Description"></textarea>
+                                ></textarea>
                             <span className="actions"></span>
                         </span>
                     </p>
                     <p class="field">
-                        <label htmlFor="image">Image</label>
+                        <label htmlFor="image">Снимка</label>
                         <span className="input">
-                            <input type="text" name="imageURL" id="image" placeholder="Сподели снимка" />
+                            <input type="text" name="imageURL" id="image"  />
                             <span className="actions"></span>
                         </span>
                     </p>
                     
-                    <input className="button" type="submit" className="submit" value="Add Comment" />
+                    <input className="submit" type="submit"  value="Добави " />
                 </fieldset>
             </form>
         </section>
