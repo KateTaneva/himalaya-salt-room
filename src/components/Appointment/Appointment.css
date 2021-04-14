@@ -15,7 +15,9 @@ form {
   border-radius: 6px;
   border: 2px solid rgb(88, 82, 82);
 }
-
+option{
+    font-size:20px;
+}
 
 .appointment-text {
   color: rgb(64, 62, 62);
@@ -30,8 +32,12 @@ form {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
+  font-style: italic;
+ 
 }
-
+.appointment-wrapper label:nth-child(3){
+    padding-top:20px;
+}
 .appointment-wrapper {
     background-image: url("https://uploads-ssl.webflow.com/5f295b6798ab9a2f97214d46/5f2aed31e4551320ae6823c2_salt(Edited).png");
   display: flex; 
@@ -39,6 +45,7 @@ form {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
+  
  
 }
 

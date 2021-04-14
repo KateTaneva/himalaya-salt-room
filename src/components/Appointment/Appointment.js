@@ -33,6 +33,7 @@ const Appointment = (
                         <option value="hour">10:00</option>
                         <option value="hour">11:00</option>
                         <option value="hour">12:00</option>
+                        <option value="hour">13:00</option>
                         <option value="hour">15:00</option>
                         <option value="hour">16:00</option>
                         <option value="hour">17:00</option>

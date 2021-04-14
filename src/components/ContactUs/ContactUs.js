@@ -3,9 +3,10 @@ import './ContactUs.css';
 const ContactUs = () => {
 
     return (
+        
         <article className='wrapper'>
             <article className='image'>
-                <img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img>
+            <button type='button'><img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img></button>
 
             </article>
             <article className='address'>
