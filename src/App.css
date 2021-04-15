@@ -1,8 +1,9 @@
-@import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
+@import "https://use.fontawesome.com/releases/v5.15.2/css/all.css";
 
-.container{
-  background: #DCCEC8;
-  
+.container {
+  background: #dccec8;
+  margin: 0;
+  padding: 0;
 }
 .container-logo {
   height: 40vmin;
@@ -38,6 +39,104 @@
     transform: rotate(360deg);
   }
 }
-body{
-  background:#DCCEC8;
+body {
+  background: #dccec8;
+}
+
+@media all and (max-width: 900px) {
+  .container {
+    width: 100vw;
+  }
+
+  #site-header > nav > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    margin-left: -30px;
+  }
+  #site-header > nav > ul.header-list {
+    flex-direction: column;
+    margin-left: -100px;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  #site-header > nav > ul.header-list > li {
+    margin-bottom: 8px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  #site-header > nav > ul.buttons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  #site-header > nav > ul.buttons > li:nth-child(2) > a i {
+    display: none;
+  }
+  #site-header > nav > ul.buttons {
+    justify-content: space-around;
+  }
+
+  #root > div > main > h1 {
+    font-size: 30px;
+  }
+
+  #root > div > main > section {
+    flex-direction: column;
+  }
+
+  #root > div > main > section > article:nth-child(1),
+  #root > div > main > section > article:nth-child(2),
+  #root > div > main > section > article:nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  #root > div > div > article.childrensRooms > ul {
+    margin-top: 110px;
+  }
+
+  #root > div > div > h1 {
+    font-size: 30px;
+  }
+  #root > div > div > section {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  #root > div > div > section > article:nth-child(6) > p {
+    margin-top: -12px;
+  }
+  #root > div > section > article > form {
+    padding: 0;
+  }
+
+  #root > div > footer > article > div.feedback > a {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  #root > div > footer > article > div.feedback > a:hover {
+    color: white;
+  }
+
+  #root > div > section > form {
+    padding: 0;
+  }
+
+
+
+  #root > div > span {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 142px;
+  }
 }
