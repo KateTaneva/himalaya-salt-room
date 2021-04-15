@@ -1,27 +1,18 @@
-import { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import * as moreInfoService from '../services/moreInfoService';
 import { Link } from 'react-router-dom';
+import Feedback from '../Feedback/Feedback';
 
-const AllFeedbacks = (
-    match
-) =>{
 
-    let [feedback, setFeedback] = useState({});
-    useEffect(()=>{
-        moreInfoService.update(match.params.feedbackId)
-        
-        .then(res => setFeedback(res))
-        .catch((err)=>{
-            console.log(err);
-        })
-    }, [])
-    return(
-        <section className="all-feedbacks-displayed">
-            <h4>{feedback.name}</h4>
-            <p>{feedback.description}</p>
-            <p className="image">{feedback.imageURL}</p>
+function AllFeedbacks() {
+
+    return (
+        <section className="all-feedbacks-displayed" >
+            <h4>{useContext(Feedback)}</h4>
+            <p>{useContext(Feedback)}</p>
+            <p className="image">{useContext(Feedback)}</p>
             <div className="edit-feedback">
-                <Link to={`./allfeedbacks/${feedback.idd}/edit`}><button className="button">Edit Feedback</button></Link>
+                <Link to={`./allfeedbacks/${useContext(Feedback)}/edit`}><button className="button">Edit Feedback</button></Link>
             </div>
         </section>
     )
