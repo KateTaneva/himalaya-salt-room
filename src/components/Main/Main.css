@@ -1,9 +1,12 @@
+main{
+  display: block;
+}
 .main-wrapper {
   background-image: url('./salt-room.jpg');
   background: linear-gradient(
       to right,
-      rgb(204, 190, 190),
-      rgba(250, 249, 249, 0.3)
+      rgb(149, 147, 147),
+      rgba(208, 205, 205, 0.3)
     ),
     url("./salt-room.jpg");
     background-size: cover;

@@ -9,26 +9,37 @@ const Login = ({
 
         const username = e.target.username.value;
         const password = e.target.password.value;
-        
+
+        let userCredential = {
+            username,
+            password,
+        }
         console.log(username, password);
 
         auth.signInWithEmailAndPassword(username, password)
-        .then((userCredential) =>{
-           
-            history.push('/characteristics');
-        })
-        .catch((error)=> {
-            if(password.length < 10 ){
-                
-                throw("Password is too short!")
-            }else{
-               
-                history.push('/characteristics');
-            }
-        });
+            .then((userCredential) => {
+                if (username && password) {
+                    history.push('/characteristics');
+                }
 
-      
-        
+            })
+            .catch((error) => {
+                if (!username && !password) {
+                    console.log(error)
+                    throw (`You don't add username and password!`)
+                } else if (username && !password) {
+                    throw (`Password is not correct!`)
+               
+                } else if (!username && password) {
+                    throw (`Username is not correct!`)
+                } else if (password.length < 10) {
+                    console.log(error)
+                    throw ("Password is too short!")
+                }
+            });
+
+
+
     }
     return (
         <section className="login">

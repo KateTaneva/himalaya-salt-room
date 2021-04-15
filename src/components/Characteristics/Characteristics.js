@@ -3,7 +3,7 @@ import './Characteristics.css'
 const Characteristics = ()  => {
 
     return(
-       <div classname='characteristics-wrapper'>
+       <div className='characteristics-wrapper'>
             <h1>Влияние на солта върху организма</h1>
         <section className='characteristics-section'>
             

@@ -50,3 +50,39 @@ footer {
   #root > div > footer > article > div.feedback > a:hover{
     color: whitesmoke;
   }
+
+  @media all and (max-width: 900px){
+  #root > div > section {
+      background-image: url("https://northforkrealestateshowcase.com/wp-content/uploads/2018/10/salt.jpg");
+      object-fit: cover;
+    }
+  
+    #root > div > section > form {
+      margin-top: 50px;;
+      line-height: 10px;
+      font-size: 20px;
+      margin-left: 10px;
+      line-height: 0;
+    }
+  
+    #description {
+      margin: 0px;
+      width: 332px;
+      height: 29px;
+    }
+    #root > div > section > form > fieldset > input {
+      background: rgb(157, 171, 184);
+      border: none;
+      color: whitesmoke;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    #root > div > section > form{
+      margin-left: 65px;
+    }
+    #root > div > footer{
+     margin-top: 40px;
+    }
+  
+  }

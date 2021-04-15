@@ -139,4 +139,11 @@ body {
     margin: 0 auto;
     padding-left: 142px;
   }
+
+  #root > div > section > form > fieldset > legend{
+    font-size: 23px;
+    position: relative;
+    line-height: 20px;
+    color: black;
+  }
 }
