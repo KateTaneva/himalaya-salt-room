@@ -9,7 +9,7 @@ const Login = ({
 
         const username = e.target.username.value;
         const password = e.target.password.value;
-
+        
         console.log(username, password);
 
         auth.signInWithEmailAndPassword(username, password)
@@ -19,12 +19,15 @@ const Login = ({
         })
         .catch((error)=> {
             if(password.length < 10 ){
+                
                 throw("Password is too short!")
             }else{
                
                 history.push('/characteristics');
             }
         });
+
+      
         
     }
     return (
