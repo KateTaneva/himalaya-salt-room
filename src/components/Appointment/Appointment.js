@@ -6,14 +6,13 @@ const Appointment = (
 ) => {
 
     const onAppointmentSubmitHandler = (e) => {
-       
         console.log("Избраният час е запазен!");
 
 
         const client = e.target;
         moreInfoService.create(client.value)
             .then(()=> {
-               history.push('/')
+                history.push('/notification');
                
             })
                  .catch(err => console.log(err))

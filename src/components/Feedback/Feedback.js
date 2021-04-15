@@ -12,7 +12,7 @@ const Feedback = ({
         const {name, description, imageURL} = e.target;
         moreInfoService.create(name.value, description.value, imageURL.value)
         .then(() => {
-          history.push("/allfeedbacks");
+          history.push('/notification');
          
         })
         .catch(error => console.log(error));

@@ -80,8 +80,7 @@ import Footer from './components/Footer/Footer';
 import ContactUs from './components/ContactUs/ContactUs';
 import SaltRooms from './components/SaltRooms/SaltRooms';
 import Feedback from './components/Feedback/Feedback';
-import AllFeedbacks from './components/AllFeedbacks/AllFeedbacks';
-import EditFeedback from './components/EditFeedback/EditFeedback';
+import AddedCommentNotification from './components/AddedCommentNotification/AddedCommentNotification';
 import BookSaltRoom from './components/BookSaltRoom/BookSaltRoom';
 import { auth } from './utils/firebase';
 import Login from './components/Login/Login';
@@ -114,13 +113,11 @@ function App() {
         <Route path="/book-room" component={BookSaltRoom} />
         <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
         <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
-        <Route path="/booking-calendar/appointment" component={Appointment}/>
+        <Route path="/booking-calendar/appointment" component={Appointment} />
 
-        <Route path='/characteristics' component={Characteristics}/>
+        <Route path='/characteristics' component={Characteristics} />
         <Route path="/feedback" component={Feedback} />
-        <Route path="/allfeedbacks" component={AllFeedbacks} />
-        <Route path="/feedback/all-feedbacks/edit" component={EditFeedback}/>
-
+        <Route path="/notification" component={AddedCommentNotification} />
         <Route path="/header" component={Header} />
         <Route path='/login' component={Login} />
         <Route path="/register" component={Register} />
