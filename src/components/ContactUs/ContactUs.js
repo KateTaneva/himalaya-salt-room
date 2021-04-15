@@ -6,7 +6,7 @@ const ContactUs = () => {
         
         <article className='wrapper'>
             <article className='image'>
-            <button type='button'><img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img></button>
+           <img src='https://pbs.twimg.com/profile_images/1063137797022928899/IXg2rAMv_400x400.jpg' alt='logo'></img>
 
             </article>
             <article className='address'>

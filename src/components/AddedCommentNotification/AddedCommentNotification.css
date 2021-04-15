@@ -1,7 +1,12 @@
 
 .addedCommentNotification{
    
-  color:rgb(110, 105, 105);
+  color:rgb(51, 48, 48);
  font-size:30px;
  padding-left: 700px;
+}
+
+
+main{
+    display: none;
 }
