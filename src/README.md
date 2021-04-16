@@ -4,4 +4,4 @@ App includes functionalities as Booking a room for specific date and hour, clien
 
 Firebase Authentication and data validation are used, notifications are displayed by making changes.  App communicated to remote service via REST.
 
-SPA app with 'react-router-dom' - Route, Redirect, Link are mostly used. Booking Calendar implemented. CSS styles imported as files in 'Example.js' components. Media responsive to max-width 900px implemented.
+SPA app with 'react-router-dom' - Route, Redirect, Link are mostly used. Booking Calendar implemented. CSS styles imported as files in 'Example.js' components. Media responsive to max-width 900px implemented..
