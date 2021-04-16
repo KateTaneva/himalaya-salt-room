@@ -38,26 +38,26 @@ function App() {
       <Header {...authInfo} />
       <Main />
       <Switch>
-        
+
 
         <Route path="/contact-us" render={props => <ContactUs {...props} {...authInfo} />} />
         <Route path="/salt-rooms" exact render={props => <SaltRooms {...props} {...authInfo} />} />
-        <Route path="/book-room" render={props => <BookSaltRoom {...props} {...authInfo}/>} />
+        <Route path="/book-room" render={props => <BookSaltRoom {...props} {...authInfo} />} />
         <Route path="/salt-rooms/book-room/booking-calendar" render={props => <BookingCalendar {...props} {...authInfo} />} />
         <Route path="/book-room">
           {!user ? <Redirect to="/salt-rooms/book-room/booking-calendar" /> : <BookingCalendar />}
         </Route>
-        <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo}/>} />
+        <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo} />} />
 
         <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo} />} />
-* <Route path="/appointment-notification" component={AppointmentNotification}/> *
-* <Route path="/salt-rooms/book-room/booking-calendar">
-         {!user ? <Redirect to="/booking-calendar/appointment" /> : <Appointment />}
-       </Route> 
+        <Route path="/appointment-notification" component={AppointmentNotification} />
+        <Route path="/salt-rooms/book-room/booking-calendar">
+          {!user ? <Redirect to="/booking-calendar/appointment" /> : <Appointment />}
+        </Route>
         <Route path="/feedback" render={props => <Feedback {...props} {...authInfo} />} />
         <Route path="/header" render={props => <Header {...props} {...authInfo} />} />
-        <Route path="/notification" render ={props => <AddedCommentNotification {...props} {...authInfo} />} />
-        <Route path='/characteristics' render={props => <Characteristics {...props} {...authInfo}/>} />
+        <Route path="/notification" render={props => <AddedCommentNotification {...props} {...authInfo} />} />
+        <Route path='/characteristics' render={props => <Characteristics {...props} {...authInfo} />} />
         <Route path='/login' render={props => <Login {...props} {...authInfo} />} />
         <Route path="/register" render={props => <Register {...props} {...authInfo} />} />
         <Route path="/logout" render={props => {

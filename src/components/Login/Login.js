@@ -1,8 +1,13 @@
 import { auth } from '../../utils/firebase';
 import './Login.css';
+
+
 const Login = ({
-    history
+    history,
+   
 }) => {
+
+  
 
     const onLoginFormSubmitHandler = (e) => {
 
@@ -38,8 +43,7 @@ const Login = ({
                 }
             });
 
-
-
+           
     }
     return (
         <section className="login">
@@ -64,7 +68,9 @@ const Login = ({
                     </p>
                     <input className="button" type="submit" class="submit" value="Login" />
                 </fieldset>
+               
             </form>
+            
         </section>)
 }
 
