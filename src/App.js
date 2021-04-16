@@ -18,6 +18,7 @@ import Register from './components/Register/Register';
 import BookingCalendar from './components/BookingCalendar/BookingCalendar';
 import Appointment from './components/Appointment/Appointment';
 import Characteristics from './components/Characteristics/Characteristics';
+import AppointmentNotification from './components/AppointmentNotification/AppointmentNotification';
 
 import { useEffect, useState } from "react";
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
         <Route path="/salt-rooms/book-room/booking-calendar" component={BookingCalendar} />
         <Route path="/booking-calendar/appointment" component={Appointment} />
+        <Route path="/appointment-notification" component={AppointmentNotification}/>
 
         <Route path='/characteristics' component={Characteristics} />
         <Route path="/feedback" component={Feedback} />

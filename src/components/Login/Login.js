@@ -5,18 +5,18 @@ const Login = ({
 }) => {
 
     const onLoginFormSubmitHandler = (e) => {
-        e.preventDefault();
+       
 
         const username = e.target.username.value;
         const password = e.target.password.value;
 
-        let userCredential = {
+        var userCredential = {
             username,
             password,
         }
         console.log(username, password);
 
-        auth.signInWithEmailAndPassword(username, password)
+        auth.userCredential(username, password)
             .then((userCredential) => {
                 if (username && password) {
                     history.push('/characteristics');

@@ -1,10 +1,32 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+    import {auth} from '../../utils/firebase';
+import { useEffect } from 'react';
 
 const Header = ({
     isAuthenticated,
     username,
 }) => {
+    useEffect(()=>{
+        if(!isAuthenticated){
+            return;
+        }
+        auth.currentUser.getIdToken()
+        .then(function(idToken){
+           return fetch('http://localhost:5001',{
+            headers:{
+                'Authorization': idToken
+            }
+            })
+           
+         
+            })
+            .then(res=>res.json())
+            .then(data =>{
+                console.log(data);
+            })
+        }, [isAuthenticated])
+       
     return (
         <header id="site-header">
             <nav className='header-nav'>

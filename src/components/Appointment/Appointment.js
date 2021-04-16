@@ -1,5 +1,6 @@
 import * as moreInfoService from '../../components/services/moreInfoService';
 import './Appointment.css';
+import {Link} from 'react-router-dom';
 
 const Appointment = (
     history
@@ -44,7 +45,7 @@ const Appointment = (
                         Име и фамилия:
                 </label>
                     <input className="appointment-text" type="text" />
-                    <input className='button' className="appointment-button" type="submit" value="Запази" />
+                   <Link to="/appointment-notification"> <input className='button' className="appointment-button" type="submit" value="Запази" /></Link>
                    
                 </form>
 
