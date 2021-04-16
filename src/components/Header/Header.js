@@ -34,7 +34,7 @@ const Header = ({
                 <ul className='header-list'>
 
                     <li>
-                        <Link to="/" >Начало</Link>
+                        <Link to="/main" >Начало</Link>
                     </li>
                     <li>
                         <Link to='/characteristics' >Характеристики</Link>

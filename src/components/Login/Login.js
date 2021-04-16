@@ -5,12 +5,12 @@ const Login = ({
 }) => {
 
     const onLoginFormSubmitHandler = (e) => {
-       
+
 
         const username = e.target.username.value;
         const password = e.target.password.value;
 
-        var userCredential = {
+        const userCredential = {
             username,
             password,
         }
@@ -19,7 +19,7 @@ const Login = ({
         auth.userCredential(username, password)
             .then((userCredential) => {
                 if (username && password) {
-                    history.push('/characteristics');
+                    history.push('/characteristics')
                 }
 
             })
@@ -29,7 +29,7 @@ const Login = ({
                     throw (`You don't add username and password!`)
                 } else if (username && !password) {
                     throw (`Password is not correct!`)
-               
+
                 } else if (!username && password) {
                     throw (`Username is not correct!`)
                 } else if (password.length < 10) {

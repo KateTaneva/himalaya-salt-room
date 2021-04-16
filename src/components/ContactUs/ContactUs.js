@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <p>Понеделник – Неделя</p>
                 <p>10:00ч – 20:00ч</p>
                 <h4>ЕМАЙЛ</h4>
-                <email>info@himalayansaltroom.com</email>
+                <span>info@himalayansaltroom.com</span>
             </article>
 
         </article>
