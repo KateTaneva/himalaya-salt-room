@@ -1,4 +1,5 @@
-import { auth } from '../../utils/firebase'
+import { auth } from '../../utils/firebase';
+import './Register.css';
 
 const Register =({
     history
@@ -42,15 +43,7 @@ const onRegisterSubmitHandler = (e) =>{
                     </span>
                 </p>
 
-                {/* <p className="field">
-                    <label htmlFor="password">Повтори парола</label>
-                    <i className="fas fa-key"></i>
-                    <span className="input">
-                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password" />
-                        <span className="actions"></span>
-                        
-                    </span>
-                </p> */}
+               
 
                 <input className="button" type="submit" class="submit" value="Регистрация" />
             </fieldset>

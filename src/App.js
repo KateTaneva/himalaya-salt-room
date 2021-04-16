@@ -50,7 +50,7 @@ function App() {
         <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo} />} />
 
         <Route path="/booking-calendar/appointment" render={props => <Appointment {...props} {...authInfo} />} />
-        <Route path="/appointment-notification" component={AppointmentNotification} />
+        <Route path="/appointment-notification" render={props => <AppointmentNotification {...props} {...authInfo}/>} />
         <Route path="/salt-rooms/book-room/booking-calendar">
           {!user ? <Redirect to="/booking-calendar/appointment" /> : <Appointment />}
         </Route>

@@ -9,7 +9,8 @@ const Header = ({
 }) => {
     useEffect(()=>{
         if(!isAuthenticated){
-            return;
+             return;
+            
         }
         auth.currentUser.getIdToken()
         .then(function(idToken){

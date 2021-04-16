@@ -1,0 +1,21 @@
+
+     .register  {
+        background-image: url('https://sorssaltroom.com/wp-content/uploads/2019/05/sors-salt-room-himalayan-salt-room-chicago-salt-room-1024x767.jpeg');
+        background-repeat: repeat;
+        object-fit: cover;
+        width: 100vw;
+        position: relative;
+     }
+     fieldset{
+         width: 350px;
+     }
+     fieldset label{
+         color:white;
+     }
+
+     #root > div > section > form > fieldset > p:nth-child(2) > i, 
+     #root > div > section > form > fieldset > p:nth-child(3) > i{
+         color:white;
+     }
+
+  

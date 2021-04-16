@@ -12,7 +12,12 @@ const Feedback = ({
         const {name, description, imageURL} = e.target;
         moreInfoService.create(name.value, description.value, imageURL.value)
         .then(() => {
-          history.push('/notification');
+            if(name && description){
+                history.push('/notification');
+            }else {
+                throw(`Моля попълнете полетата`)
+            }
+          
          
         })
         .catch(error => console.log(error));
