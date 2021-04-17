@@ -1,5 +1,5 @@
 .characteristics-section {
-    margin:50px 100px;
+    margin: 100px 50px;
     padding:0;
     display: flex;
     flex-direction: row;
@@ -14,6 +14,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 25vw;
+    margin-left:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+
 }
 
 .single-effect h4{

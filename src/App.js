@@ -19,6 +19,7 @@ import AddedCommentNotification from './components/AddedCommentNotification/Adde
 import Characteristics from './components/Characteristics/Characteristics';
 import AppointmentNotification from './components/AppointmentNotification/AppointmentNotification';
 
+
 function App() {
 
   const [user, setUser] = useState(null);
@@ -64,7 +65,6 @@ function App() {
           auth.signOut();
           return <Redirect to="/" />
         }} />
-
       </Switch>
       <Footer />
     </div>
